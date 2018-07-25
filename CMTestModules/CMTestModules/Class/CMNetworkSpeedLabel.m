@@ -1,0 +1,119 @@
+//
+//  CMNetworkSpeedLabel.m
+//  CMTestModuls
+//
+//  Created by 智借iOS on 2018/7/11.
+//  Copyright © 2018年 CrabMan. All rights reserved.
+//
+
+#import "CMNetworkSpeedLabel.h"
+#import "CMWeakProxy.h"
+#import "NSAttributedString+CMText.h"
+#import "CMNetworkMonitor.h"
+#define CMSize CGSizeMake(300, 20)
+
+@implementation CMNetworkSpeedLabel {
+    NSTimer *_timer;
+    NSUInteger _count;
+    NSTimeInterval _lastTime;
+    UIFont *_font;
+    UIFont *_subFont;
+    
+    NSTimeInterval _llll;
+}
+
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (frame.size.width == 0 && frame.size.height == 0) {
+        frame.size = CMSize;
+    }
+    if (self = [super initWithFrame:frame]) {
+        
+        [self initSubViews];
+        
+//        _link = [CADisplayLink displayLinkWithTarget:[CMWeakProxy cm_proxyWithTarget:self] selector:@selector(tick:)];
+//        [_link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+        
+        _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerStart:) userInfo:nil repeats:YES];
+        
+        [_timer fire];
+        
+    }
+    
+    
+    return self;
+}
+
+- (void)initSubViews {
+    
+    self.layer.cornerRadius = 5;
+    self.clipsToBounds = YES;
+    self.textAlignment = NSTextAlignmentCenter;
+    self.userInteractionEnabled = NO;
+    self.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.700];
+    
+    _font = [UIFont fontWithName:@"Menlo" size:14];
+    if (_font) {
+        _subFont = [UIFont fontWithName:@"Menlo" size:4];
+    } else {
+        _font = [UIFont fontWithName:@"Courier" size:14];
+        _subFont = [UIFont fontWithName:@"Courier" size:4];
+    }
+    
+    
+    
+}
+
+
+- (void)dealloc {
+    [_timer invalidate];
+}
+
+- (CGSize)sizeThatFits:(CGSize)size {
+    return CMSize;
+}
+
+- (void)timerStart:(NSTimer *)timer {
+    
+    
+   NSArray *speedArr = [CMNetworkMonitor cm_getWifiInterfaceBytes];
+    
+    
+    NSMutableAttributedString *uploadStr = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"↑ WIFI：%.01lf/Cellular：%.01lf",[speedArr[0] floatValue],[speedArr[1] floatValue]]];
+    
+//    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"↑ WIFI：Cellular：↓ WIFI：Cellular：",(int)round(fps)]];
+    
+ //   [text cm_setColor:color range:NSMakeRange(0, text.length - 3)];
+   // [text cm_setColor:[UIColor whiteColor] range:NSMakeRange(text.length - 3, 3)];
+    uploadStr.font = _font;
+    [uploadStr cm_setColor:[UIColor redColor] range:NSMakeRange(0, uploadStr.length)];
+    self.attributedText = uploadStr;
+}
+
+- (void):(CADisplayLink *)link {
+    if (_lastTime == 0) {
+        _lastTime = link.timestamp;
+        return;
+    }
+
+    _count ++;
+    NSTimeInterval delta = link.timestamp - _lastTime;
+    if (delta < 1) return;
+    _lastTime = link.timestamp;
+    float fps = _count / delta;
+    _count = 0;
+
+    CGFloat progress = fps / 60.0;
+    UIColor *color = [UIColor colorWithHue:0.27 * (progress - 0.2) saturation:1 brightness:0.9 alpha:1];
+
+    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%d FPS",(int)round(fps)]];
+
+    [text cm_setColor:color range:NSMakeRange(0, text.length - 3)];
+    [text cm_setColor:[UIColor whiteColor] range:NSMakeRange(text.length - 3, 3)];
+    text.font = _font;
+    [text cm_setFont:_subFont range:NSMakeRange(text.length - 4, 1)];
+
+    self.attributedText = text;
+}
+
+@end
