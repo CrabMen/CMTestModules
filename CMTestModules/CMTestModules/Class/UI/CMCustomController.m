@@ -6,13 +6,13 @@
 //  Copyright © 2018年 CrabMan. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CMCustomController.h"
 
-@interface ViewController ()
+@interface CMCustomController ()
 
 @end
 
-@implementation ViewController
+@implementation CMCustomController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

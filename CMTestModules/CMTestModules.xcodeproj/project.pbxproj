@@ -17,16 +17,14 @@
 		B50EFDA62108533300E9ED59 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B50EFD842108533200E9ED59 /* Info.plist */; };
 		B50EFDA72108533300E9ED59 /* NSNotificationCenter+CMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD8B2108533200E9ED59 /* NSNotificationCenter+CMCommon.m */; };
 		B50EFDA82108533300E9ED59 /* NSAttributedString+CMText.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD8C2108533200E9ED59 /* NSAttributedString+CMText.m */; };
-		B50EFDA92108533300E9ED59 /* CMWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD8D2108533200E9ED59 /* CMWeakProxy.m */; };
-		B50EFDAA2108533300E9ED59 /* CMFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD8E2108533200E9ED59 /* CMFPSLabel.m */; };
-		B50EFDAB2108533300E9ED59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD8F2108533200E9ED59 /* ViewController.m */; };
-		B50EFDAC2108533300E9ED59 /* NSNotificationCenter+CMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD952108533200E9ED59 /* NSNotificationCenter+CMCommon.m */; };
-		B50EFDAD2108533300E9ED59 /* NSAttributedString+CMText.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD962108533200E9ED59 /* NSAttributedString+CMText.m */; };
-		B50EFDAE2108533300E9ED59 /* CMWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD972108533200E9ED59 /* CMWeakProxy.m */; };
-		B50EFDAF2108533300E9ED59 /* CMFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD982108533200E9ED59 /* CMFPSLabel.m */; };
-		B50EFDB02108533300E9ED59 /* CMNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9B2108533200E9ED59 /* CMNetworkMonitor.m */; };
-		B50EFDB12108533300E9ED59 /* CMNetworkSpeedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9C2108533200E9ED59 /* CMNetworkSpeedLabel.m */; };
-		B50EFDB22108533300E9ED59 /* CMTestModulesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9F2108533200E9ED59 /* CMTestModulesManager.m */; };
+		B50EFDC92108553000E9ED59 /* CMWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDB72108553000E9ED59 /* CMWeakProxy.m */; };
+		B50EFDCF2108553000E9ED59 /* CMNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDC42108553000E9ED59 /* CMNetworkMonitor.m */; };
+		B50EFDD02108553000E9ED59 /* CMNetworkSpeedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDC52108553000E9ED59 /* CMNetworkSpeedLabel.m */; };
+		B50EFDD12108553000E9ED59 /* CMTestModulesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDC82108553000E9ED59 /* CMTestModulesManager.m */; };
+		B50EFDD42108555900E9ED59 /* CMBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDD32108555900E9ED59 /* CMBaseController.m */; };
+		B50EFDD72108564200E9ED59 /* CMFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDD62108564200E9ED59 /* CMFPSLabel.m */; };
+		B50EFDDB210872A700E9ED59 /* CMCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDD9210872A700E9ED59 /* CMCustomController.m */; };
+		B50EFDDE210872F200E9ED59 /* CMTestModulesConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDDD210872F200E9ED59 /* CMTestModulesConfigController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,30 +59,26 @@
 		B50EFD822108533200E9ED59 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B50EFD832108533200E9ED59 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B50EFD842108533200E9ED59 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B50EFD862108533200E9ED59 /* CMNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMNetworkMonitor.h; sourceTree = "<group>"; };
-		B50EFD872108533200E9ED59 /* CMNetworkSpeedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMNetworkSpeedLabel.h; sourceTree = "<group>"; };
 		B50EFD892108533200E9ED59 /* NSNotificationCenter+CMCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+CMCommon.h"; sourceTree = "<group>"; };
 		B50EFD8A2108533200E9ED59 /* NSAttributedString+CMText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CMText.h"; sourceTree = "<group>"; };
 		B50EFD8B2108533200E9ED59 /* NSNotificationCenter+CMCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+CMCommon.m"; sourceTree = "<group>"; };
 		B50EFD8C2108533200E9ED59 /* NSAttributedString+CMText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CMText.m"; sourceTree = "<group>"; };
-		B50EFD8D2108533200E9ED59 /* CMWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWeakProxy.m; sourceTree = "<group>"; };
-		B50EFD8E2108533200E9ED59 /* CMFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFPSLabel.m; sourceTree = "<group>"; };
-		B50EFD8F2108533200E9ED59 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B50EFD902108533200E9ED59 /* CMTestModulesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTestModulesManager.h; sourceTree = "<group>"; };
-		B50EFD932108533200E9ED59 /* NSNotificationCenter+CMCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+CMCommon.h"; sourceTree = "<group>"; };
-		B50EFD942108533200E9ED59 /* NSAttributedString+CMText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CMText.h"; sourceTree = "<group>"; };
-		B50EFD952108533200E9ED59 /* NSNotificationCenter+CMCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+CMCommon.m"; sourceTree = "<group>"; };
-		B50EFD962108533200E9ED59 /* NSAttributedString+CMText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CMText.m"; sourceTree = "<group>"; };
-		B50EFD972108533200E9ED59 /* CMWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWeakProxy.m; sourceTree = "<group>"; };
-		B50EFD982108533200E9ED59 /* CMFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFPSLabel.m; sourceTree = "<group>"; };
-		B50EFD992108533200E9ED59 /* CMFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFPSLabel.h; sourceTree = "<group>"; };
-		B50EFD9A2108533200E9ED59 /* CMWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWeakProxy.h; sourceTree = "<group>"; };
-		B50EFD9B2108533200E9ED59 /* CMNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMNetworkMonitor.m; sourceTree = "<group>"; };
-		B50EFD9C2108533200E9ED59 /* CMNetworkSpeedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMNetworkSpeedLabel.m; sourceTree = "<group>"; };
-		B50EFD9D2108533200E9ED59 /* CMFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFPSLabel.h; sourceTree = "<group>"; };
-		B50EFD9E2108533200E9ED59 /* CMWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWeakProxy.h; sourceTree = "<group>"; };
-		B50EFD9F2108533200E9ED59 /* CMTestModulesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTestModulesManager.m; sourceTree = "<group>"; };
-		B50EFDA02108533200E9ED59 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B50EFDB52108553000E9ED59 /* CMNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMNetworkMonitor.h; sourceTree = "<group>"; };
+		B50EFDB62108553000E9ED59 /* CMNetworkSpeedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMNetworkSpeedLabel.h; sourceTree = "<group>"; };
+		B50EFDB72108553000E9ED59 /* CMWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWeakProxy.m; sourceTree = "<group>"; };
+		B50EFDB92108553000E9ED59 /* CMTestModulesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTestModulesManager.h; sourceTree = "<group>"; };
+		B50EFDC42108553000E9ED59 /* CMNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMNetworkMonitor.m; sourceTree = "<group>"; };
+		B50EFDC52108553000E9ED59 /* CMNetworkSpeedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMNetworkSpeedLabel.m; sourceTree = "<group>"; };
+		B50EFDC72108553000E9ED59 /* CMWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWeakProxy.h; sourceTree = "<group>"; };
+		B50EFDC82108553000E9ED59 /* CMTestModulesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTestModulesManager.m; sourceTree = "<group>"; };
+		B50EFDD22108555900E9ED59 /* CMBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMBaseController.h; sourceTree = "<group>"; };
+		B50EFDD32108555900E9ED59 /* CMBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMBaseController.m; sourceTree = "<group>"; };
+		B50EFDD52108564200E9ED59 /* CMFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFPSLabel.h; sourceTree = "<group>"; };
+		B50EFDD62108564200E9ED59 /* CMFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFPSLabel.m; sourceTree = "<group>"; };
+		B50EFDD9210872A700E9ED59 /* CMCustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCustomController.m; sourceTree = "<group>"; };
+		B50EFDDA210872A700E9ED59 /* CMCustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCustomController.h; sourceTree = "<group>"; };
+		B50EFDDC210872F200E9ED59 /* CMTestModulesConfigController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMTestModulesConfigController.h; sourceTree = "<group>"; };
+		B50EFDDD210872F200E9ED59 /* CMTestModulesConfigController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMTestModulesConfigController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,11 +157,11 @@
 			isa = PBXGroup;
 			children = (
 				B50EFD7C2108533200E9ED59 /* AppDelegate.h */,
+				B50EFD832108533200E9ED59 /* AppDelegate.m */,
 				B50EFD7D2108533200E9ED59 /* Assets.xcassets */,
 				B50EFD7E2108533200E9ED59 /* LaunchScreen.storyboard */,
 				B50EFD802108533200E9ED59 /* Main.storyboard */,
 				B50EFD822108533200E9ED59 /* main.m */,
-				B50EFD832108533200E9ED59 /* AppDelegate.m */,
 				B50EFD842108533200E9ED59 /* Info.plist */,
 			);
 			path = Other;
@@ -176,20 +170,10 @@
 		B50EFD852108533200E9ED59 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				B50EFD862108533200E9ED59 /* CMNetworkMonitor.h */,
-				B50EFD872108533200E9ED59 /* CMNetworkSpeedLabel.h */,
+				B50EFDD8210872A700E9ED59 /* UI */,
+				B50EFDB32108553000E9ED59 /* Base */,
+				B50EFDB42108553000E9ED59 /* Utils */,
 				B50EFD882108533200E9ED59 /* Category */,
-				B50EFD8D2108533200E9ED59 /* CMWeakProxy.m */,
-				B50EFD8E2108533200E9ED59 /* CMFPSLabel.m */,
-				B50EFD8F2108533200E9ED59 /* ViewController.m */,
-				B50EFD902108533200E9ED59 /* CMTestModulesManager.h */,
-				B50EFD912108533200E9ED59 /* FPSLabel */,
-				B50EFD9B2108533200E9ED59 /* CMNetworkMonitor.m */,
-				B50EFD9C2108533200E9ED59 /* CMNetworkSpeedLabel.m */,
-				B50EFD9D2108533200E9ED59 /* CMFPSLabel.h */,
-				B50EFD9E2108533200E9ED59 /* CMWeakProxy.h */,
-				B50EFD9F2108533200E9ED59 /* CMTestModulesManager.m */,
-				B50EFDA02108533200E9ED59 /* ViewController.h */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -205,27 +189,49 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		B50EFD912108533200E9ED59 /* FPSLabel */ = {
+		B50EFDB32108553000E9ED59 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				B50EFD922108533200E9ED59 /* Category */,
-				B50EFD972108533200E9ED59 /* CMWeakProxy.m */,
-				B50EFD982108533200E9ED59 /* CMFPSLabel.m */,
-				B50EFD992108533200E9ED59 /* CMFPSLabel.h */,
-				B50EFD9A2108533200E9ED59 /* CMWeakProxy.h */,
+				B50EFDD22108555900E9ED59 /* CMBaseController.h */,
+				B50EFDD32108555900E9ED59 /* CMBaseController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B50EFDB42108553000E9ED59 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B50EFDB52108553000E9ED59 /* CMNetworkMonitor.h */,
+				B50EFDC42108553000E9ED59 /* CMNetworkMonitor.m */,
+				B50EFDB62108553000E9ED59 /* CMNetworkSpeedLabel.h */,
+				B50EFDC52108553000E9ED59 /* CMNetworkSpeedLabel.m */,
+				B50EFDC72108553000E9ED59 /* CMWeakProxy.h */,
+				B50EFDB72108553000E9ED59 /* CMWeakProxy.m */,
+				B50EFDB92108553000E9ED59 /* CMTestModulesManager.h */,
+				B50EFDC82108553000E9ED59 /* CMTestModulesManager.m */,
+				B50EFDBA2108553000E9ED59 /* FPSLabel */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B50EFDBA2108553000E9ED59 /* FPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				B50EFDD52108564200E9ED59 /* CMFPSLabel.h */,
+				B50EFDD62108564200E9ED59 /* CMFPSLabel.m */,
 			);
 			path = FPSLabel;
 			sourceTree = "<group>";
 		};
-		B50EFD922108533200E9ED59 /* Category */ = {
+		B50EFDD8210872A700E9ED59 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				B50EFD932108533200E9ED59 /* NSNotificationCenter+CMCommon.h */,
-				B50EFD942108533200E9ED59 /* NSAttributedString+CMText.h */,
-				B50EFD952108533200E9ED59 /* NSNotificationCenter+CMCommon.m */,
-				B50EFD962108533200E9ED59 /* NSAttributedString+CMText.m */,
+				B50EFDD9210872A700E9ED59 /* CMCustomController.m */,
+				B50EFDDA210872A700E9ED59 /* CMCustomController.h */,
+				B50EFDDC210872F200E9ED59 /* CMTestModulesConfigController.h */,
+				B50EFDDD210872F200E9ED59 /* CMTestModulesConfigController.m */,
 			);
-			path = Category;
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +296,7 @@
 		B50EFD3E2108528500E9ED59 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CM;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = CrabMan;
 				TargetAttributes = {
@@ -359,20 +366,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B50EFDAB2108533300E9ED59 /* ViewController.m in Sources */,
-				B50EFDB12108533300E9ED59 /* CMNetworkSpeedLabel.m in Sources */,
+				B50EFDC92108553000E9ED59 /* CMWeakProxy.m in Sources */,
+				B50EFDDE210872F200E9ED59 /* CMTestModulesConfigController.m in Sources */,
+				B50EFDD42108555900E9ED59 /* CMBaseController.m in Sources */,
+				B50EFDD02108553000E9ED59 /* CMNetworkSpeedLabel.m in Sources */,
+				B50EFDD12108553000E9ED59 /* CMTestModulesManager.m in Sources */,
+				B50EFDDB210872A700E9ED59 /* CMCustomController.m in Sources */,
+				B50EFDD72108564200E9ED59 /* CMFPSLabel.m in Sources */,
 				B50EFDA52108533300E9ED59 /* AppDelegate.m in Sources */,
-				B50EFDB22108533300E9ED59 /* CMTestModulesManager.m in Sources */,
 				B50EFDA42108533300E9ED59 /* main.m in Sources */,
-				B50EFDAA2108533300E9ED59 /* CMFPSLabel.m in Sources */,
-				B50EFDAE2108533300E9ED59 /* CMWeakProxy.m in Sources */,
-				B50EFDAF2108533300E9ED59 /* CMFPSLabel.m in Sources */,
+				B50EFDCF2108553000E9ED59 /* CMNetworkMonitor.m in Sources */,
 				B50EFDA82108533300E9ED59 /* NSAttributedString+CMText.m in Sources */,
-				B50EFDB02108533300E9ED59 /* CMNetworkMonitor.m in Sources */,
-				B50EFDAD2108533300E9ED59 /* NSAttributedString+CMText.m in Sources */,
 				B50EFDA72108533300E9ED59 /* NSNotificationCenter+CMCommon.m in Sources */,
-				B50EFDA92108533300E9ED59 /* CMWeakProxy.m in Sources */,
-				B50EFDAC2108533300E9ED59 /* NSNotificationCenter+CMCommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +548,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBW48U6989;
-				INFOPLIST_FILE = CMTestModules/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CMTestModules/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -560,7 +565,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBW48U6989;
-				INFOPLIST_FILE = CMTestModules/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CMTestModules/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

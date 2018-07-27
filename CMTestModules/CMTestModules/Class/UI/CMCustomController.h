@@ -6,9 +6,10 @@
 //  Copyright © 2018年 CrabMan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CMBaseController.h"
 
-@interface ViewController : UIViewController
+
+@interface CMCustomController : CMBaseController
 
 
 @end
